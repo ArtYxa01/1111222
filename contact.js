@@ -31,7 +31,7 @@ async function removeContact(contactId) {
 
   await fs.writeFile(contactsPath, JSON.stringify(newContacts));
   //   console.log(contacts);
-  console.log(contacts[idx]);
+
   return contacts[idx];
 }
 
@@ -41,7 +41,7 @@ async function addContact(name, email, phone) {
   contacts.push(newContacts);
   //   console.table(contacts);
   await fs.writeFile(contactsPath, JSON.stringify(contacts));
-  console.log(newContacts);
+ 
   return newContacts;
 }
 

@@ -15,10 +15,12 @@ async function invokeAction({ action, id, name, email, phone }) {
 
     case 'add':
       const addContacts = addContact(name, email, phone);
+      console.log (addContact)
       break;
 
     case 'remove':
       const contactRemove = removeContact(id);
+      console.log (removeContact)
       break;
 
     default:
